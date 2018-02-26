@@ -1,1 +1,83 @@
-Hello, little sparrow! I'm waiting for you...
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>For the little sparrow</title>
+    <style>
+        body {
+            background-color: #151515;
+            padding: 10px;
+        }
+        .screen {
+            background-color: #151515;
+            box-sizing: border-box;
+            width: 550px;
+            margin: 0 auto;
+            padding: 20px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        p {
+            position: relative;
+            left: 50%;
+            margin-left: -8.5em;
+            text-align: left;
+            font-size: 1.25em;
+            font-family: monospace;
+            white-space: normal;
+            overflow: hidden;
+        }
+        span {
+            color: #fff;
+            font-weight: bold;
+        }
+        .line {
+            white-space: pre-wrap;
+            color: #fff;
+        }
+        .cursor {
+            animation: blink 1s 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            40% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="screen">
+    <p class="line">> cowsay $MYMESSAGE</p>
+    <p class="line">
+ _________________________
+/ Still writing something \
+\ interesting…            /
+ -------------------------
+    \   ^__^
+     \  (oo)\_______
+        (__)\       )\/\
+            ||----w |
+            ||     ||
+    </p>
+    <p class="line">><span class="cursor">_</span></p>
+</div>
+</body>
+
+</html>
